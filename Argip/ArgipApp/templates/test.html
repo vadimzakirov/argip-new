@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Workers Test</title>
+  </head>
+  <body>
+    <div class="test">
+      {% for cat in cats %}
+      {{cat.name}} : {{cat.argip_id}} , {{cat.parent_category_id_argip}}
+      <br>
+      {% endfor %}
+      <br>
+      New cats:
+      {% for cat in new_cats %}
+      {{cat.name}} : {{cat.argip_id}} , {{cat.parent_category_id_argip}}
+      <br>
+      {% endfor %}
+      <br>
+    </div>
+  </body>
+</html>
